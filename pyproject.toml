@@ -1,0 +1,28 @@
+[project]
+name = "centenario-restaurador"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "vpenacca-pixel", email = "vpenacca@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.16.0",
+    "diffusers>=0.43.0",
+    "gradio>=6.32.0",
+    "numpy>=2.5.4",
+    "pillow>=13.0.0",
+    "scikit-image>=0.26.0",
+    "timm>=1.0.31",
+    "torch>=2.15.0",
+    "torchvision>=0.29.2",
+    "transformers>=5.23.0",
+]
+
+[project.scripts]
+centenario-restaurador = "centenario_restaurador:main"
+
+[build-system]
+requires = ["uv_build>=0.13.2,<0.14.0"]
+build-backend = "uv_build"

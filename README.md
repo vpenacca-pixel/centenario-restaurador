@@ -1,3 +1,8 @@
+Tecnicatura Superior en Ciencia de Datos e IA
+Materia: Procesamiento de Imágenes
+Alumna: Victoria Penacca
+
+
 # Restaurador de Fotos del Centenario Escolar
 
 Desarrollé una herramienta local de restauración asistida por Inteligencia Artificial diseñada para limpiar ruido, grano y desenfoque en fotografías históricas del archivo escolar, priorizando la **integridad documental** y la transparencia sobre qué detalles son originales y cuáles fueron reconstruidos por el modelo.

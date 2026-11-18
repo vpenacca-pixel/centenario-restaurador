@@ -1,6 +1,8 @@
-Tecnicatura Superior en Ciencia de Datos e IA
-Materia: Procesamiento de Imágenes
-Alumna: Victoria Penacca
+## Tecnicatura Superior en Ciencia de Datos e IA
+
+# Materia: Procesamiento de Imágenes
+
+## Alumna: Victoria Penacca
 
 
 # Restaurador de Fotos del Centenario Escolar
@@ -35,7 +37,7 @@ El código está modularizado en componentes independientes dentro de `src/`:
 * **`src/diffusion.py`**: Motor principal de restauración. Combina **Stable Diffusion 1.5** (`stable-diffusion-v1-5/stable-diffusion-v1-5`) con **ControlNet Tile** (`lllyasviel/control_v11f1e_sd15_tile`) y un *scheduler* `DPMSolverMultistepScheduler` para reducir ruido y mejorar nitidez respetando la estructura original. Incluye escalado adaptativo (512px–896px) y *attention slicing* para funcionar en CPU sin desbordar la memoria RAM.
 
 * **`src/analysis.py`**: Módulo de verificación de contenido basado en el detector de objetos **RT-DETR** (`PekingU/rtdetr_r50vd`). Compara la cantidad de personas y elementos reconocidos antes y después de la restauración para alertar si el modelo generativo inventó o eliminó sujetos. 
-Esto es fundamental en el proyecto porque la mayoría de las fotos 
+Esto es fundamental en el proyecto porque la mayoría de las fotos son de personas, por lo que la eliminación no es admisible a menos que sea buscada.
 
 * **`src/honesty.py`**: Módulo de transparencia histórica:
   * Genera una **línea base clásica** mediante filtro bilateral (`scikit-image`) para contrastar un método matemático tradicional contra la IA generativa.

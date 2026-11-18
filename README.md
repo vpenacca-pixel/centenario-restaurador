@@ -1,6 +1,6 @@
 ## Tecnicatura Superior en Ciencia de Datos e IA
 
-# Materia: Procesamiento de Imágenes
+# Materia: Técnicas de Procesamiento Digital de Imágenes
 
 ## Alumna: Victoria Penacca
 
